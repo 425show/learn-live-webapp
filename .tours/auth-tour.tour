@@ -1,0 +1,31 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "Auth Tour",
+  "steps": [
+    {
+      "file": "appsettings.json",
+      "description": "Update the Azure AD configuration settings with your App Registration\r\nconfiguration settings",
+      "line": 2
+    },
+    {
+      "file": "Startup.cs",
+      "description": "Update the middleware to add authentication and enable the ability to acquire\r\naccess tokens for MS Graph using the appropriate scopes",
+      "line": 32
+    },
+    {
+      "file": "Controllers/UserController.cs",
+      "description": "Create a new Controller to server MS Graph data for the currently signed\r\nin user. Notice how we request all access to this controller to have an\r\nauthenticated user :)",
+      "line": 10
+    },
+    {
+      "file": "Controllers/UserController.cs",
+      "description": "Use the `GraphServiceClient` to get the user data from MS Graph",
+      "line": 26
+    },
+    {
+      "file": "Views/User/index.cshtml",
+      "description": "Add this view to display our MS Graph data to the user",
+      "line": 5
+    }
+  ]
+}

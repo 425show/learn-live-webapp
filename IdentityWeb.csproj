@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>aspnet-IdentityWeb-9898C2D3-BA37-44DC-8BDF-045222157446</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.6" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.OpenIdConnect" Version="5.0.6" NoWarn="NU1605" />
+    <PackageReference Include="Microsoft.Identity.Web" Version="1.10.0" />
+    <PackageReference Include="Microsoft.Identity.Web.MicrosoftGraph" Version="1.10.0" />
+    <PackageReference Include="Microsoft.Identity.Web.UI" Version="1.10.0" />
+  </ItemGroup>
+
+</Project>
